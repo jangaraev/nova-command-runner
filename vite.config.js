@@ -37,6 +37,6 @@ export default defineConfig({
     },
 
     optimizeDeps: {
-        include: ["vue", "@inertiajs/inertia", "@inertiajs/inertia-vue3", "axios"],
+        include: ["vue"],
     },
 });

@@ -19,6 +19,6 @@ class CommandRunnerTool extends Tool
     {
         return MenuSection::make(__(config('nova-command-runner.navigation_label', 'Command Runner')))
             ->path('/' . config('nova-command-runner.path', 'command-runner'))
-            ->icon('terminal');
+            ->icon('command-line');
     }
 }

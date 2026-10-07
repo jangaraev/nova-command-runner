@@ -67,7 +67,7 @@
                 <ToolbarButton
                     @click.prevent="getData"
                     :loading="loading"
-                    type="refresh"
+                    icon="arrow-path"
                     :title="__('Refresh')"
                 />
 
@@ -77,14 +77,14 @@
                         'text-green-500': playing,
                         'text-gray-500': !playing,
                     }"
-                    type="clock"
+                    icon="clock"
                     class="w-8 h-8"
                     :title="__('Polling')"
                 />
 
                 <ToolbarButton
                     @click.prevent="clearHistory"
-                    type="trash"
+                    icon="trash"
                     class="text-red-500"
                     :title="__('Clear history')"
                 />
@@ -187,10 +187,8 @@
                 class="flex flex-col justify-center items-center px-6 py-8"
             >
                 <Icon
-                    type="search"
-                    class="mb-3 text-gray-300 dark:text-gray-500"
-                    width="50"
-                    height="50"
+                    name="magnifying-glass"
+                    class="mb-3 text-gray-300 dark:text-gray-500 !w-[50px] !h-[50px]"
                 ></Icon>
 
                 <h3 class="text-base font-normal mt-3">

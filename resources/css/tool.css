@@ -1,1 +1,7 @@
-@import "tailwindcss";
+/* No preflight: Nova ships its own base styles, a second reset would restyle all of Nova. */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+/* Nova toggles dark mode with a .dark class, not the OS media query. */
+@custom-variant dark (&:where(.dark, .dark *));

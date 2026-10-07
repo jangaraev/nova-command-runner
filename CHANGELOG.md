@@ -1,5 +1,12 @@
 # Release Notes
 
+## [5.0.0](#)
+- Nova 5 only (`laravel/nova: ^5.0`)
+- Icons use Nova 5 `<Icon name>` API and Heroicons v2 names (`arrow-path`, `magnifying-glass`, `command-line`)
+- Tool CSS no longer ships Tailwind preflight (it restyled the whole Nova UI)
+- `dark:` styles follow Nova's theme switch (`.dark` class) instead of the OS setting
+- Removed unused Inertia dev dependencies
+
 ## [4.4.0](#)
 - Added `Stepanenko3\NovaCommandRunner\Traits\RunsArtisan`
 - Update `run_by` assignment to use the `getArtisanRunByName` method

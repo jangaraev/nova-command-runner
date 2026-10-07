@@ -5,7 +5,7 @@
     >
         <span :class="{ invisible: processing || loading }">
             <slot />
-            <Icon v-if="type" solid :type="type" />
+            <Icon v-if="icon" :name="icon" type="solid" />
         </span>
 
         <span
@@ -21,7 +21,7 @@
 <script>
     export default {
         props: {
-            type: {
+            icon: {
                 type: String,
                 required: false,
             },
