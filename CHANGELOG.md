@@ -1,5 +1,9 @@
 # Release Notes
 
+## [5.1.0](#)
+- Dropped `stepanenko3/laravel-helpers` (it caps `laravel/framework` at ^12); `in_array_wildcard()` replaced with `Str::is()`
+- Require PHP ^8.1
+
 ## [5.0.0](#)
 - Nova 5 only (`laravel/nova: ^5.0`)
 - Icons use Nova 5 `<Icon name>` API and Heroicons v2 names (`arrow-path`, `magnifying-glass`, `command-line`)
