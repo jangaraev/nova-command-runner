@@ -1,5 +1,8 @@
 # Release Notes
 
+## [5.1.1](#)
+- Package renamed to `jangaraev/nova-command-runner` (fork of `stepanenko3/nova-command-runner`); PHP namespace unchanged
+
 ## [5.1.0](#)
 - Dropped `stepanenko3/laravel-helpers` (it caps `laravel/framework` at ^12); `in_array_wildcard()` replaced with `Str::is()`
 - Require PHP ^8.1
