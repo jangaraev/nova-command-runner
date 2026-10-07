@@ -24,10 +24,11 @@ export default defineConfig({
         },
         rollupOptions: {
             input: resolve(__dirname, "resources/js/tool.js"),
-            external: ["vue", "Nova", "LaravelNova"],
+            external: ["vue", "Nova", "LaravelNova", "laravel-nova-ui"],
             output: {
                 globals: {
                     vue: "Vue",
+                    "laravel-nova-ui": "LaravelNovaUi",
                     nova: "Nova",
                     "laravel-nova": "LaravelNova",
                 },

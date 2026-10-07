@@ -19,7 +19,11 @@
 </template>
 
 <script>
+    import { Icon } from "laravel-nova-ui";
+
     export default {
+        components: { Icon },
+
         props: {
             icon: {
                 type: String,

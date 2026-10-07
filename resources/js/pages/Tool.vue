@@ -300,6 +300,7 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
+import { Icon } from "laravel-nova-ui";
 import Button from "../components/Button.vue";
 import ToolbarButton from "../components/ToolbarButton.vue";
 

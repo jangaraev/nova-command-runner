@@ -1,7 +1,8 @@
 <template>
     <div
-        class="shadow relative h-10 px-4 rounded-lg bg-primary-500 text-white text-white flex items-center text-center cursor-pointer hover:opacity-75 transition"
+        class="shadow relative h-10 px-4 rounded-lg text-white flex items-center text-center cursor-pointer hover:opacity-75 transition"
         :class="{
+            'bg-primary-500': !['danger', 'warning', 'info', 'success', 'gray'].includes(theme),
             'bg-red-500': theme === 'danger',
             'bg-yellow-500': theme === 'warning',
             'bg-blue-500': theme === 'info',
